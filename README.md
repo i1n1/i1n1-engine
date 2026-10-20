@@ -21,7 +21,7 @@ cmake --build build
 
 - Verified build environment: macOS on arm64, Apple clang 21, CMake 4.4, Ninja, C11, `BUILD_TESTING=OFF`.
   Other hosts and compilers have not been verified for this release.
-- Warnings are errors by default (`-DI1N1_WARNINGS_AS_ERRORS=OFF` relaxes this for other compilers).
+- The build hardcodes `-Werror`; there is no option to disable warnings as errors.
 - Unsupported instructions, registers or devices are reported as deterministic stops by the source, not
   emulated; this release is a build of that source, not evidence of a working guest.
 - Target names keep the engine's original `ocnext_` prefix and the shared library keeps its original output name.

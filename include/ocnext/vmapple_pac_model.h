@@ -10,8 +10,8 @@ extern "C" {
 
 /* A separately named, source-versioned transition model. It is not an Apple
  * key issuer, a CPU bank, an ONXT message or a qualified guest HVC provider.
- * Behavior source: utmapp/Hypervisor b2c910fb9f687929a50e5a7d62e59e43a006d47d,
- * hv.c deliver_pac_trap; that source describes macOS12.5.1, not target26A434.
+ * The existing profile is limited to macOS12.5.1 behavior; it does not
+ * establish behavior for target26A434.
  * No upstream implementation text is included in this library.
  */
 #define OCNEXT_VMAPPLE_PAC_MODEL_ABI_VERSION 1u
