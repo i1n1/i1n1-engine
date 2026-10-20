@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/mattconte/tlsf",
+  "commit": "deff9ab509341f264addbd3c8ada533678591905",
+  "license": "BSD-3-Clause notice in tlsf.h",
+  "source_text_imported": true,
+  "root_source_and_license_review": true,
+  "files": {
+    "tlsf.c": {
+      "sha256": "2a0f8cfc9cfe6114ccdc6cf22339059440b16f1149b5107bead4ae4c3a0d50e2",
+      "bytes": 35135,
+      "upstream_url": "https://github.com/mattconte/tlsf/blob/deff9ab509341f264addbd3c8ada533678591905/tlsf.c",
+      "modification": "none; original CRLF retained"
+    },
+    "tlsf.h": {
+      "sha256": "f7f73c48810ba60203095667c226e5a600a6ea0f69afba48efff6efbaa628d4f",
+      "bytes": 3523,
+      "upstream_url": "https://github.com/mattconte/tlsf/blob/deff9ab509341f264addbd3c8ada533678591905/tlsf.h",
+      "modification": "none; original CRLF retained"
+    }
+  },
+  "porting_boundary": "Private freestanding assert/stdio/string/stdlib headers and real fatal/memcpy port, no OS or Boot Services allocator",
+  "selected_wrapper_never_calls": [
+    "tlsf_create_with_pool",
+    "tlsf_realloc",
+    "tlsf_walk_pool",
+    "tlsf_check",
+    "tlsf_check_pool"
+  ],
+  "current_target_boot_qualified": false
+}
